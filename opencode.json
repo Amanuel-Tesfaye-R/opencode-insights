@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    {
+      "name": "opencode-insights",
+      "description": "Analytics dashboard that tracks tokens, models, tools, and cost from your OpenCode sessions",
+      "author": "Amanuel Tesfaye",
+      "version": "1.0.0",
+      "launch": {
+        "command": "open",
+        "url": "http://localhost:3777",
+        "delay": 2000
+      }
+    }
+  ]
+}

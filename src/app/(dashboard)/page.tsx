@@ -89,12 +89,12 @@ export default async function OverviewPage({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.png"
-              alt="OpenCode Usage Tracking logo"
+              alt="OpenCode Insights logo"
               width={44}
               height={44}
               className="h-11 w-11 rounded-xl object-contain shadow-[0_0_16px_rgba(0,222,255,0.25)]"
             />
-            OpenCode Usage Tracking
+            OpenCode Insights
           </span>
         }
         description="Every detail of OpenCode's work, filtered by the timeline."

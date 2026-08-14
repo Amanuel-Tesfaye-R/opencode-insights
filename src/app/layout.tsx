@@ -15,11 +15,64 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "OpenCode Usage Tracking",
-    template: "%s | OpenCode Usage Tracking",
+    default: "OpenCode Insights — AI Coding Analytics Dashboard",
+    template: "%s | OpenCode Insights",
   },
   description:
-    "Every detail of OpenCode's work, straight from the local database.",
+    "Track your AI coding sessions with OpenCode Insights. Visualize tokens, models, tools, files, and cost from your local OpenCode database. No cloud, no sign-up, 100% local.",
+  keywords: [
+    "opencode",
+    "ai analytics",
+    "coding dashboard",
+    "token tracking",
+    "AI usage",
+    "local analytics",
+    "open source",
+    "developer tools",
+    "Claude",
+    "GPT",
+    "LLM tracking",
+  ],
+  authors: [{ name: "Amanuel Tesfaye" }],
+  creator: "Amanuel Tesfaye",
+  publisher: "OpenCode Insights",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://github.com/Amanuel-Tesfaye-R/opencode-insights",
+    title: "OpenCode Insights — AI Coding Analytics Dashboard",
+    description:
+      "Track tokens, models, tools, files, and cost from your local OpenCode database. No cloud, no sign-up, 100% local.",
+    siteName: "OpenCode Insights",
+    images: [
+      {
+        url: "https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-overview.png",
+        width: 1200,
+        height: 630,
+        alt: "OpenCode Insights Dashboard Overview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OpenCode Insights — AI Coding Analytics Dashboard",
+    description:
+      "Track tokens, models, tools, files, and cost from your local OpenCode database.",
+    images: [
+      "https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-overview.png",
+    ],
+  },
   icons: {
     icon: "/logo.png",
   },

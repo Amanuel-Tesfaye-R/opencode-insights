@@ -124,14 +124,14 @@ export function Sidebar({ stats }: { stats: SidebarStats }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
-            alt="OpenCode Usage Tracking logo"
+            alt="OpenCode Insights logo"
             width={36}
             height={36}
             className="h-9 w-9 rounded-lg shrink-0 object-contain shadow-[0_0_14px_rgba(0,222,255,0.35)]"
           />
           <div>
             <p className="text-sm font-semibold text-white leading-tight">
-              OpenCode Usage Tracking
+              OpenCode Insights
             </p>
             <p className="text-[11px] text-white/40 font-mono">local analytics</p>
           </div>

@@ -20,13 +20,13 @@ export function Header() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/logo.png"
-          alt="OpenCode Usage Tracking logo"
+          alt="OpenCode Insights logo"
           width={28}
           height={28}
           className="h-7 w-7 rounded-md object-contain"
         />
         <span className="text-sm font-semibold tracking-tight">
-          OpenCode Usage Tracking
+          OpenCode Insights
         </span>
       </div>
       <div className="flex items-center gap-2 ml-auto">
