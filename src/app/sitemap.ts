@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://github.com/Amanuel-Tesfaye-R/opencode-insights";
+  const baseUrl = "https://github.com/Amanuel-Tesfaye-R/opencode-usage-tracking";
 
   const pages = [
     "",

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://github.com/Amanuel-Tesfaye-R/opencode-insights
+Sitemap: https://github.com/Amanuel-Tesfaye-R/opencode-usage-tracking

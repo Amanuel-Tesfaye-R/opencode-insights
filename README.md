@@ -15,8 +15,8 @@ No cloud. No telemetry. No sign-up. 100% local.
 
 ## Screenshots
 
-![Overview](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-overview.png)
-![Sessions](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-sessions.png)
+![Overview](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-overview.png)
+![Sessions](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-sessions.png)
 
 ---
 
@@ -42,8 +42,8 @@ No cloud. No telemetry. No sign-up. 100% local.
 
 ```bash
 # Clone the repo
-git clone https://github.com/Amanuel-Tesfaye-R/opencode-insights.git
-cd opencode-insights
+git clone https://github.com/Amanuel-Tesfaye-R/opencode-usage-tracking.git
+cd opencode-usage-tracking
 
 # Install dependencies
 npm install
@@ -67,7 +67,7 @@ This configures OpenCode to open the insights dashboard in your browser every ti
 ### Option 3: Docker
 
 ```bash
-docker run -v ~/.local/share/opencode:/data -p 3777:3777 amanuel/opencode-insights
+docker run -v ~/.local/share/opencode:/data -p 3777:3777 amanuel/opencode-usage-tracking
 ```
 
 ---

@@ -1,5 +1,5 @@
 {
-  "name": "opencode-insights",
+  "name": "opencode-usage-tracking",
   "version": "1.0.0",
   "private": true,
   "description": "Local analytics dashboard for OpenCode — track tokens, models, tools, files, and cost across your AI coding sessions.",

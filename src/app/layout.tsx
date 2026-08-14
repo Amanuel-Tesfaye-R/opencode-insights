@@ -50,14 +50,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://github.com/Amanuel-Tesfaye-R/opencode-insights",
+    url: "https://github.com/Amanuel-Tesfaye-R/opencode-usage-tracking",
     title: "OpenCode Insights — AI Coding Analytics Dashboard",
     description:
       "Track tokens, models, tools, files, and cost from your local OpenCode database. No cloud, no sign-up, 100% local.",
     siteName: "OpenCode Insights",
     images: [
       {
-        url: "https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-overview.png",
+        url: "https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-overview.png",
         width: 1200,
         height: 630,
         alt: "OpenCode Insights Dashboard Overview",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     description:
       "Track tokens, models, tools, files, and cost from your local OpenCode database.",
     images: [
-      "https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-overview.png",
+      "https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-overview.png",
     ],
   },
   icons: {
