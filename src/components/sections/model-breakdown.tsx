@@ -23,7 +23,7 @@ export function ModelBreakdown({ models }: { models: ModelBreakdown[] }) {
         {models.map((m) => {
           const total = m.tokensInput + m.tokensOutput;
           return (
-            <div key={m.modelId}>
+            <div key={`${m.providerId}-${m.modelId}`}>
               <div className="flex items-center justify-between mb-1.5">
                 <span className="text-sm font-medium font-mono">{m.modelId}</span>
                 <span className="text-xs text-muted-foreground font-mono">
