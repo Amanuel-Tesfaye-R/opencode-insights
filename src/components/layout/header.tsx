@@ -1,13 +1,11 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useTheme } from "next-themes";
-import { Loader2, Moon, RefreshCw, Sun } from "lucide-react";
+import { Loader2, RefreshCw } from "lucide-react";
 import { useState } from "react";
 
 export function Header() {
   const router = useRouter();
-  const { resolvedTheme, setTheme } = useTheme();
   const [refreshing, setRefreshing] = useState(false);
 
   const refresh = () => {
@@ -43,17 +41,6 @@ export function Header() {
             <RefreshCw className="h-4 w-4" />
           )}
           <span className="hidden sm:inline">Refresh</span>
-        </button>
-        <button
-          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-          className="inline-flex items-center justify-center h-9 w-9 rounded-md border border-input bg-background shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-          aria-label="Toggle theme"
-        >
-          {resolvedTheme === "dark" ? (
-            <Sun className="h-4 w-4" />
-          ) : (
-            <Moon className="h-4 w-4" />
-          )}
         </button>
       </div>
     </header>

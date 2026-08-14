@@ -2,8 +2,6 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 :root {
   --card: #ffffff;
   --card-foreground: #0d3040;
@@ -39,43 +37,6 @@
   --sidebar-accent: #0f3a4f;
   --sidebar-accent-foreground: #e6f4f1;
   --sidebar-border: #1b4a63;
-  --sidebar-ring: #00deff;
-}
-
-.dark {
-  --background: #071a24;
-  --foreground: #d9f0f5;
-  --card: #0b222f;
-  --card-foreground: #d9f0f5;
-  --popover: #0b222f;
-  --popover-foreground: #d9f0f5;
-  --primary: #00abe0;
-  --primary-foreground: #041820;
-  --secondary: #dc751e;
-  --secondary-foreground: #180d03;
-  --muted: #102b3a;
-  --muted-foreground: #8fb3c2;
-  --accent: #00deff;
-  --accent-foreground: #041820;
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
-  --border: #1b3a4a;
-  --input: #1b3a4a;
-  --ring: #00deff;
-  --gold: #00deff;
-  --navy: #0a2b3c;
-  --chart-1: #00abe0;
-  --chart-2: #00deff;
-  --chart-3: #dc751e;
-  --chart-4: #94a3b8;
-  --chart-5: #22c55e;
-  --sidebar: #0a2b3c;
-  --sidebar-foreground: #d9f0f5;
-  --sidebar-primary: #00abe0;
-  --sidebar-primary-foreground: #041820;
-  --sidebar-accent: #102b3a;
-  --sidebar-accent-foreground: #d9f0f5;
-  --sidebar-border: #1b3a4a;
   --sidebar-ring: #00deff;
 }
 
