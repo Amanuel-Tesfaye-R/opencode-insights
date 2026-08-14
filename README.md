@@ -2,8 +2,8 @@
 
 Local dashboard that shows every detail of your OpenCode usage, straight from the OpenCode database. No cloud, no telemetry, no external services.
 
-![Overview](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-overview.png)
-![Sessions](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-sessions.png)
+![Overview](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-overview.png)
+![Sessions](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-sessions.png)
 
 ## What it shows
 
