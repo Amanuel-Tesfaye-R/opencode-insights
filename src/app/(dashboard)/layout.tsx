@@ -4,7 +4,7 @@ import { getSidebarStats } from "@/lib/queries";
 
 export const dynamic = "force-dynamic";
 
-export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+export default function DashboardLayout({ children }: LayoutProps<"/">) {
   const stats = getSidebarStats();
   return (
     <div className="min-h-screen flex">

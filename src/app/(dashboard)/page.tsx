@@ -88,13 +88,13 @@ export default async function OverviewPage({
           <span className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/icon.png"
-              alt="OpenCode Insights logo"
+              src="/mesob-logo.png"
+              alt="Mesob AI Stats logo"
               width={44}
               height={44}
               className="h-11 w-11 rounded-xl object-contain shadow-[0_0_16px_rgba(0,222,255,0.25)]"
             />
-            OpenCode Insights
+            Mesob AI Stats
           </span>
         }
         description="Every detail of Mesob's work, filtered by the timeline."

@@ -16,27 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'OpenCode Insights',
-    template: '%s | OpenCode Insights',
+    default: "Mesob AI Stats",
+    template: "%s | Mesob AI Stats",
   },
   description:
-    'Local dashboard for OpenCode usage analytics. Read-only SQLite viewer with sessions, tools, models, projects, and tokens.',
-  keywords: ['opencode', 'ai coding', 'analytics', 'dashboard', 'sqlite', 'cli', 'local', 'usage', 'tokens', 'sessions'],
-  authors: [{ name: 'Amanuel Tesfaye', url: 'https://github.com/Amanuel-Tesfaye-R' }],
-  openGraph: {
-    title: 'OpenCode Insights',
-    description:
-      'Local dashboard for OpenCode usage analytics. No cloud, no telemetry.',
-    url: 'https://opencode-insights.dev',
-    siteName: 'OpenCode Insights',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'OpenCode Insights',
-    description:
-      'Local dashboard for OpenCode usage analytics. No cloud, no telemetry.',
-  },
+    "Every detail of Mesob's work, straight from the local database.",
 };
 
 export const viewport: Viewport = {
@@ -44,7 +28,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
