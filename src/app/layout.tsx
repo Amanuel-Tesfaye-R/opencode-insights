@@ -15,11 +15,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mesob AI Stats",
-    template: "%s | Mesob AI Stats",
+    default: "OpenCode Usage Tracking",
+    template: "%s | OpenCode Usage Tracking",
   },
   description:
-    "Every detail of Mesob's work, straight from the local database.",
+    "Every detail of OpenCode's work, straight from the local database.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export const viewport: Viewport = {

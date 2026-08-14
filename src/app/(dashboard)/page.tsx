@@ -88,16 +88,16 @@ export default async function OverviewPage({
           <span className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/mesob-logo.png"
-              alt="Mesob AI Stats logo"
+              src="/logo.png"
+              alt="OpenCode Usage Tracking logo"
               width={44}
               height={44}
               className="h-11 w-11 rounded-xl object-contain shadow-[0_0_16px_rgba(0,222,255,0.25)]"
             />
-            Mesob AI Stats
+            OpenCode Usage Tracking
           </span>
         }
-        description="Every detail of Mesob's work, filtered by the timeline."
+        description="Every detail of OpenCode's work, filtered by the timeline."
         actions={
           <Segmented options={RANGES} value={range} basePath="/" />
         }

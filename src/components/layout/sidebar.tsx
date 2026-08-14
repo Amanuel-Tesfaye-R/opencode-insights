@@ -123,17 +123,17 @@ export function Sidebar({ stats }: { stats: SidebarStats }) {
         <div className="flex items-center gap-3 px-5 py-5 border-b border-white/10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/mesob-logo.png"
-            alt="Mesob AI Stats logo"
+            src="/logo.png"
+            alt="OpenCode Usage Tracking logo"
             width={36}
             height={36}
             className="h-9 w-9 rounded-lg shrink-0 object-contain shadow-[0_0_14px_rgba(0,222,255,0.35)]"
           />
           <div>
             <p className="text-sm font-semibold text-white leading-tight">
-              Mesob AI Stats
+              OpenCode Usage Tracking
             </p>
-            <p className="text-[11px] text-white/40 font-mono">local dashboard</p>
+            <p className="text-[11px] text-white/40 font-mono">local analytics</p>
           </div>
         </div>
 

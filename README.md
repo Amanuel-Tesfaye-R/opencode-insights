@@ -1,4 +1,4 @@
-# Mesob AI Stats
+# OpenCode Usage Tracking
 
 Local dashboard that shows every detail of your OpenCode usage, straight from the OpenCode database. No cloud, no telemetry, no external services.
 
@@ -59,7 +59,7 @@ OPENCODE_DB_PATH="C:\\path\\to\\opencode.db" npm run dev
 - Tailwind CSS v4 with navy and gold design tokens
 - `node:sqlite` for database access, zero native dependencies
 - Hand-rolled SVG charts, no chart library
-- Dark theme by default with light/dark toggle
+- Light theme
 
 ## FAQ
 

@@ -19,14 +19,14 @@ export function Header() {
       <div className="flex items-center gap-2.5 lg:hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/mesob-logo.png"
-          alt="Mesob AI Stats logo"
+          src="/logo.png"
+          alt="OpenCode Usage Tracking logo"
           width={28}
           height={28}
           className="h-7 w-7 rounded-md object-contain"
         />
         <span className="text-sm font-semibold tracking-tight">
-          Mesob AI Stats
+          OpenCode Usage Tracking
         </span>
       </div>
       <div className="flex items-center gap-2 ml-auto">
