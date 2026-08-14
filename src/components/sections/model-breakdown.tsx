@@ -20,10 +20,10 @@ export function ModelBreakdown({ models }: { models: ModelBreakdown[] }) {
         </div>
       </CardHeader>
       <CardContent className="space-y-5">
-        {models.map((m) => {
+        {models.map((m, i) => {
           const total = m.tokensInput + m.tokensOutput;
           return (
-            <div key={`${m.providerId}-${m.modelId}`}>
+            <div key={`${m.providerId}-${m.modelId}-${i}`}>
               <div className="flex items-center justify-between mb-1.5">
                 <span className="text-sm font-medium font-mono">{m.modelId}</span>
                 <span className="text-xs text-muted-foreground font-mono">
