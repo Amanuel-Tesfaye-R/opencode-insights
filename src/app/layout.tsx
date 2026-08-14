@@ -91,6 +91,8 @@ export const metadata: Metadata = {
   icons: {
     icon: "/logo.png",
   },
+  manifest: "/manifest.json",
+  themeColor: "#00abe0",
 };
 
 export const viewport: Viewport = {
@@ -105,44 +107,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <head>
-        <link rel="canonical" href={BASE_URL} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "OpenCode Usage Tracking",
-              description:
-                "Local-first analytics dashboard for OpenCode. Track tokens, models, tools, files, and cost from your AI coding sessions.",
-              url: BASE_URL,
-              applicationCategory: "DeveloperApplication",
-              operatingSystem: "Cross-platform",
-              programmingLanguage: ["TypeScript", "React", "Next.js"],
-              license: "MIT",
-              author: {
-                "@type": "Person",
-                name: "Amanuel Tesfaye",
-                url: BASE_URL,
-              },
-              repository: BASE_URL,
-              screenshot: OG_IMAGE,
-              featureList: [
-                "Token usage tracking",
-                "Model breakdown analytics",
-                "Tool call monitoring",
-                "Project activity analysis",
-                "File edit tracking",
-                "Todo management",
-                "Agent usage statistics",
-                "Cost tracking",
-                "Local-first privacy",
-              ],
-            }),
-          }}
-        />
-      </head>
       <body className="min-h-full flex flex-col">
         {children}
       </body>

@@ -1,0 +1,22 @@
+{
+  "name": "OpenCode Usage Tracking",
+  "short_name": "OC Insights",
+  "description": "Track your AI coding sessions — tokens, models, tools, files, and cost — all locally.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071a24",
+  "theme_color": "#00abe0",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
