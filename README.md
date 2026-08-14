@@ -1,11 +1,9 @@
-# OpenCode Insights
+# Mesob AI Stats
 
-Local dashboard for OpenCode usage analytics. No cloud, no telemetry, no external services. Reads the OpenCode SQLite database read-only and renders it in the browser.
+Local dashboard that shows every detail of your OpenCode usage, straight from the OpenCode database. No cloud, no telemetry, no external services.
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black)
-![React](https://img.shields.io/badge/React-19-61dafb)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-green)
+![Overview](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-overview.png)
+![Sessions](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-insights/master/public/screenshot-sessions.png)
 
 ## What it shows
 
@@ -19,7 +17,17 @@ Local dashboard for OpenCode usage analytics. No cloud, no telemetry, no externa
 - **Todos**: todos created and completed per session
 - **Agents**: agent usage stats
 
-## Run it
+## Auto-launch with OpenCode
+
+This dashboard is designed to launch automatically when you start OpenCode. Just run:
+
+```bash
+opencode
+```
+
+And the dashboard opens in your browser at http://localhost:3777. It refreshes live as you work, no restart needed.
+
+## Manual run
 
 ```bash
 npm install
@@ -28,7 +36,7 @@ npm run dev
 
 Open http://localhost:3777
 
-### Production
+### Production build
 
 ```bash
 npm run build
@@ -45,8 +53,6 @@ Override the path if needed:
 OPENCODE_DB_PATH="C:\\path\\to\\opencode.db" npm run dev
 ```
 
-Click Refresh in the header to reload after a new session, no restart needed.
-
 ## Stack
 
 - Next.js 16 App Router, React 19, TypeScript
@@ -54,11 +60,6 @@ Click Refresh in the header to reload after a new session, no restart needed.
 - `node:sqlite` for database access, zero native dependencies
 - Hand-rolled SVG charts, no chart library
 - Dark theme by default with light/dark toggle
-
-## Screenshots
-
-![Overview Dashboard](https://opencode-insights.dev/screenshots/overview.png)
-![Session Detail](https://opencode-insights.dev/screenshots/session-detail.png)
 
 ## FAQ
 
