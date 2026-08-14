@@ -13,13 +13,6 @@ No cloud. No telemetry. No sign-up. 100% local.
 
 ---
 
-## Screenshots
-
-![Overview](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-overview.png)
-![Sessions](https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-sessions.png)
-
----
-
 ## What It Tracks
 
 | Metric | Description |

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 const BASE_URL = "https://github.com/Amanuel-Tesfaye-R/opencode-usage-tracking";
-const OG_IMAGE = `${BASE_URL}/raw/master/public/screenshot-overview.png`;
+const OG_IMAGE = `${BASE_URL}/raw/master/public/logo.png`;
 
 export const metadata: Metadata = {
   title: {
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "OpenCode Usage Tracking Dashboard Overview",
+        alt: "OpenCode Usage Tracking",
         type: "image/png",
       },
     ],
