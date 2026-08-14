@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OpenCode Insights
 
-## Getting Started
+Local dashboard for OpenCode usage analytics. No cloud, no telemetry, no external services. Reads the OpenCode SQLite database read-only and renders it in the browser.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![React](https://img.shields.io/badge/React-19-61dafb)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+
+## What it shows
+
+- **Overview**: KPI cards, daily activity chart, token flow, cache hit rate, models, tools, projects
+- **Sessions**: searchable table with project filters, drill into any session for full detail
+- **Session detail**: full message timeline, reasoning blocks, tool calls with input/output, files changed, todos, token breakdown
+- **Tools**: every tool call across all sessions, filterable by tool and status, paginated
+- **Projects**: activity breakdown across your codebases
+- **Models**: model usage distribution and trends
+- **Files**: files touched per project
+- **Todos**: todos created and completed per session
+- **Agents**: agent usage stats
+
+## Run it
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3777
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Data source
 
-To learn more about Next.js, take a look at the following resources:
+Reads `%USERPROFILE%\.local\share\opencode\opencode.db` in read-only mode. The connection is opened with `PRAGMA query_only` so the dashboard can never write to your OpenCode data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Override the path if needed:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+OPENCODE_DB_PATH="C:\\path\\to\\opencode.db" npm run dev
+```
 
-## Deploy on Vercel
+Click Refresh in the header to reload after a new session, no restart needed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 16 App Router, React 19, TypeScript
+- Tailwind CSS v4 with navy and gold design tokens
+- `node:sqlite` for database access, zero native dependencies
+- Hand-rolled SVG charts, no chart library
+- Dark theme by default with light/dark toggle
+
+## Screenshots
+
+![Overview Dashboard](https://opencode-insights.dev/screenshots/overview.png)
+![Session Detail](https://opencode-insights.dev/screenshots/session-detail.png)
+
+## FAQ
+
+**Is my data uploaded anywhere?**
+No. Everything stays on your machine. The dashboard reads your local SQLite file and never sends data anywhere.
+
+**Does it modify my OpenCode database?**
+No. It opens the database with `PRAGMA query_only`.
+
+**Which OpenCode version is required?**
+Any version that writes to the standard SQLite database at `%USERPROFILE%\.local\share\opencode\opencode.db`.
+
+## License
+
+MIT
