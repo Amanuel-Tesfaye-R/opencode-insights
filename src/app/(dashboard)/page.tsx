@@ -32,7 +32,9 @@ import { formatNumber, formatTokens } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Overview",
+  title: "Overview — OpenCode Usage Tracking",
+  description: "Your complete AI coding analytics dashboard. Track token usage, model breakdowns, tool calls, projects, files edited, cost, and productivity — all from your local OpenCode database.",
+  keywords: ["opencode dashboard", "AI coding analytics", "token tracking", "usage tracking", "AI productivity", "developer analytics", "coding metrics"],
 };
 
 const RANGES = [

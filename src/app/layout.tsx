@@ -13,29 +13,42 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const BASE_URL = "https://github.com/Amanuel-Tesfaye-R/opencode-usage-tracking";
+const OG_IMAGE = `${BASE_URL}/raw/master/public/screenshot-overview.png`;
+
 export const metadata: Metadata = {
   title: {
-    default: "OpenCode Insights — AI Coding Analytics Dashboard",
-    template: "%s | OpenCode Insights",
+    default: "OpenCode Usage Tracking — AI Coding Analytics Dashboard",
+    template: "%s | OpenCode Usage Tracking",
   },
   description:
-    "Track your AI coding sessions with OpenCode Insights. Visualize tokens, models, tools, files, and cost from your local OpenCode database. No cloud, no sign-up, 100% local.",
+    "Track your AI coding sessions with OpenCode Usage Tracking. Visualize tokens, models, tools, files edited, cost, and productivity from your local OpenCode database. No cloud, no sign-up, 100% local and private.",
   keywords: [
     "opencode",
-    "ai analytics",
-    "coding dashboard",
+    "opencode analytics",
+    "opencode dashboard",
+    "opencode usage tracking",
+    "AI coding analytics",
     "token tracking",
-    "AI usage",
+    "token usage",
+    "AI usage tracking",
+    "LLM analytics",
     "local analytics",
+    "self-hosted analytics",
+    "developer analytics",
+    "coding productivity",
+    "AI productivity",
     "open source",
     "developer tools",
-    "Claude",
-    "GPT",
-    "LLM tracking",
+    "Claude analytics",
+    "GPT tracking",
+    "AI cost tracking",
+    "sqlite dashboard",
   ],
-  authors: [{ name: "Amanuel Tesfaye" }],
+  authors: [{ name: "Amanuel Tesfaye", url: BASE_URL }],
   creator: "Amanuel Tesfaye",
-  publisher: "OpenCode Insights",
+  publisher: "OpenCode Usage Tracking",
+  category: "Developer Tools",
   robots: {
     index: true,
     follow: true,
@@ -47,31 +60,33 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: BASE_URL,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://github.com/Amanuel-Tesfaye-R/opencode-usage-tracking",
-    title: "OpenCode Insights — AI Coding Analytics Dashboard",
+    url: BASE_URL,
+    title: "OpenCode Usage Tracking — AI Coding Analytics Dashboard",
     description:
-      "Track tokens, models, tools, files, and cost from your local OpenCode database. No cloud, no sign-up, 100% local.",
-    siteName: "OpenCode Insights",
+      "Track tokens, models, tools, files, cost, and productivity from your local OpenCode database. No cloud, no sign-up, 100% local.",
+    siteName: "OpenCode Usage Tracking",
     images: [
       {
-        url: "https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-overview.png",
+        url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "OpenCode Insights Dashboard Overview",
+        alt: "OpenCode Usage Tracking Dashboard Overview",
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OpenCode Insights — AI Coding Analytics Dashboard",
+    title: "OpenCode Usage Tracking — AI Coding Analytics Dashboard",
     description:
-      "Track tokens, models, tools, files, and cost from your local OpenCode database.",
-    images: [
-      "https://raw.githubusercontent.com/Amanuel-Tesfaye-R/opencode-usage-tracking/master/public/screenshot-overview.png",
-    ],
+      "Track tokens, models, tools, files, and cost from your local OpenCode database. 100% local and private.",
+    images: [OG_IMAGE],
   },
   icons: {
     icon: "/logo.png",
@@ -90,6 +105,44 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="canonical" href={BASE_URL} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "OpenCode Usage Tracking",
+              description:
+                "Local-first analytics dashboard for OpenCode. Track tokens, models, tools, files, and cost from your AI coding sessions.",
+              url: BASE_URL,
+              applicationCategory: "DeveloperApplication",
+              operatingSystem: "Cross-platform",
+              programmingLanguage: ["TypeScript", "React", "Next.js"],
+              license: "MIT",
+              author: {
+                "@type": "Person",
+                name: "Amanuel Tesfaye",
+                url: BASE_URL,
+              },
+              repository: BASE_URL,
+              screenshot: OG_IMAGE,
+              featureList: [
+                "Token usage tracking",
+                "Model breakdown analytics",
+                "Tool call monitoring",
+                "Project activity analysis",
+                "File edit tracking",
+                "Todo management",
+                "Agent usage statistics",
+                "Cost tracking",
+                "Local-first privacy",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         {children}
       </body>

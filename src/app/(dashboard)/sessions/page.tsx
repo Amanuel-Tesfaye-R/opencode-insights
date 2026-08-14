@@ -8,7 +8,9 @@ import { formatNumber } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Sessions",
+  title: "Sessions — OpenCode Usage Tracking",
+  description: "Browse all your AI coding sessions. Search, filter by project, and drill into any session for a full breakdown of messages, tool calls, files changed, and tokens.",
+  keywords: ["opencode sessions", "AI session history", "coding sessions", "AI conversation history", "session analytics"],
 };
 
 const RANGES = [

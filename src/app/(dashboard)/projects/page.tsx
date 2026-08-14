@@ -8,7 +8,9 @@ import { formatNumber } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Projects — OpenCode Usage Tracking",
+  description: "See which projects you work on most with AI. Track sessions, tokens, files changed, and cost per project across all your codebases.",
+  keywords: ["opencode projects", "AI project analytics", "coding projects", "project tracking", "multi-project analytics"],
 };
 
 const RANGES = [

@@ -7,7 +7,9 @@ import { formatNumber } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Tool calls",
+  title: "Tool Calls — OpenCode Usage Tracking",
+  description: "Browse every tool call across all your AI coding sessions. Filter by tool name, status, and session. Track success rates, errors, and tool usage patterns.",
+  keywords: ["opencode tool calls", "AI tool usage", "tool analytics", "coding tools", "tool monitoring", "bash tool", "file tools"],
 };
 
 const PAGE_SIZE = 50;

@@ -7,7 +7,9 @@ import { formatNumber } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Files",
+  title: "Files — OpenCode Usage Tracking",
+  description: "See which files you edit most with AI. Track file changes, patch counts, and edit frequency across all your OpenCode sessions.",
+  keywords: ["opencode files", "AI file edits", "most edited files", "coding activity", "file tracking", "patch tracking"],
 };
 
 export default async function FilesPage() {

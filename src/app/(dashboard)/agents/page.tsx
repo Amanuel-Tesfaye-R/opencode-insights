@@ -8,7 +8,9 @@ import { formatNumber } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Agents",
+  title: "Agents — OpenCode Usage Tracking",
+  description: "Compare AI agent performance across sessions. Track sessions, messages, tokens, and tool calls per agent.",
+  keywords: ["opencode agents", "AI agent analytics", "agent comparison", "coding agents", "agent productivity", "multi-agent tracking"],
 };
 
 const RANGES = [

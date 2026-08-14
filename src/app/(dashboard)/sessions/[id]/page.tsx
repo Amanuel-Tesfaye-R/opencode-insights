@@ -37,7 +37,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const session = getSessionById(id);
-  return { title: session ? session.title : "Session" };
+  const title = session ? `${session.title} — OpenCode Usage Tracking` : "Session Detail — OpenCode Usage Tracking";
+  const description = session
+    ? `Full breakdown of AI coding session: ${session.title}. ${formatNumber(session.messageCount)} messages, ${formatTokens(session.tokensInput + session.tokensOutput + session.tokensReasoning + session.tokensCacheRead)} tokens, ${formatNumber(session.toolCount)} tool calls.`
+    : "Full breakdown of an AI coding session with messages, tool calls, files changed, and token usage.";
+  return { title, description };
 }
 
 export default async function SessionDetailPage({

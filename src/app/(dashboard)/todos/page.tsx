@@ -7,7 +7,9 @@ import { formatNumber } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Todos",
+  title: "Todos — OpenCode Usage Tracking",
+  description: "Track todos created and completed during your AI coding sessions. See task completion rates and priority breakdowns.",
+  keywords: ["opencode todos", "AI task tracking", "coding todos", "task management", "session tasks", "productivity tracking"],
 };
 
 export default async function TodosPage({
