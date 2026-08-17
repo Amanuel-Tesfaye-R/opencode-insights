@@ -111,8 +111,8 @@ export default function GatewayPage() {
               )}
             />
             <CardContent className="p-6 flex flex-col justify-center">
-              <div className="rounded-xl border border-border bg-muted/20 p-4">
-                <GatewayWallArt state={state} />
+              <div className="rounded-xl border border-border bg-muted/20 p-4 h-[420px] flex items-center justify-center">
+                <GatewayWallArt state={state} className="h-full w-auto" />
               </div>
               <div className="mt-4">
                 <div className="flex items-center gap-2.5">
@@ -147,7 +147,7 @@ export default function GatewayPage() {
           </Card>
         </div>
 
-        <div className="lg:col-span-2 space-y-6">
+        <div className="lg:col-span-2 lg:flex lg:flex-col space-y-6">
           <div className="grid grid-cols-2 gap-4">
             <Stat
               label="Status code"
@@ -173,7 +173,7 @@ export default function GatewayPage() {
             />
           </div>
 
-          <Card>
+          <Card className="flex-1">
             <CardHeader>
               <CardTitle className="text-sm">Recent activity</CardTitle>
             </CardHeader>

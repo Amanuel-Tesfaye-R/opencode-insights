@@ -94,8 +94,8 @@ export function GatewayWallPanel() {
 
       <CardContent>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-          <div className="md:col-span-1 rounded-xl border border-border bg-muted/20 p-3">
-            <GatewayWallArt state={state} />
+          <div className="md:col-span-1 rounded-xl border border-border bg-muted/20 p-3 h-56 flex items-center justify-center">
+            <GatewayWallArt state={state} className="h-full w-auto" />
           </div>
 
           <div className="md:col-span-2 space-y-4">

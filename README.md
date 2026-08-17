@@ -1,4 +1,4 @@
-# OpenCode Insights
+# OpenCode Usage Tracking
 
 > Track your AI coding sessions — tokens, models, tools, files, and cost — all in your browser.
 
@@ -7,7 +7,7 @@
 [![SQLite](https://img.shields.io/badge/SQLite-read--only-003b57?logo=sqlite)](https://www.sqlite.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-OpenCode Insights is a **local-first analytics dashboard** for [OpenCode](https://opencode.ai). It reads your OpenCode SQLite database and visualizes every session — token usage, model breakdowns, tool calls, files edited, todos, and cost — so you can understand exactly how you work with AI.
+OpenCode Usage Tracking is a **local-first analytics dashboard** for [OpenCode](https://opencode.ai). It reads your OpenCode SQLite database and visualizes every session — token usage, model breakdowns, tool calls, files edited, todos, and cost — so you can understand exactly how you work with AI.
 
 No cloud. No telemetry. No sign-up. 100% local.
 
@@ -55,7 +55,7 @@ Run this once to set up automatic launch:
 npm run setup
 ```
 
-This configures OpenCode to open the insights dashboard in your browser every time it starts.
+This configures OpenCode to open the usage tracking dashboard in your browser every time it starts.
 
 ### Option 3: Docker
 
@@ -69,7 +69,7 @@ docker run -v ~/.local/share/opencode:/data -p 3777:3777 amanuel/opencode-usage-
 
 The `npm run setup` command creates a **launcher script** that:
 
-1. Starts the OpenCode Insights server in the background
+1. Starts the OpenCode Usage Tracking server in the background
 2. Opens your browser automatically
 3. Configures OpenCode to launch it on startup
 
@@ -85,7 +85,7 @@ If you prefer to set up manually:
 
 ## Data Source
 
-OpenCode Insights reads your local OpenCode database:
+OpenCode Usage Tracking reads your local OpenCode database:
 
 | Platform | Default Path |
 |---|---|
@@ -115,6 +115,7 @@ OPENCODE_DB_PATH="/path/to/opencode.db" npm run dev
 | `/files` | **Files** — most-edited files across all sessions |
 | `/todos` | **Todos** — tracked tasks with status and priority |
 | `/agents` | **Agents** — per-agent usage statistics |
+| `/gateway` | **Gateway Wall** — live Zen free-tier status, ping history, and the runtime readout (API keys, context, spend, LSP) |
 
 ---
 
