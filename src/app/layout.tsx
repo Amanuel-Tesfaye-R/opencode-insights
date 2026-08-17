@@ -92,12 +92,12 @@ export const metadata: Metadata = {
     icon: "/logo.png",
   },
   manifest: "/manifest.json",
-  themeColor: "#00abe0",
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#00abe0",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

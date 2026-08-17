@@ -12,11 +12,13 @@ import {
   ListChecks,
   Menu,
   MessagesSquare,
+  Shield,
   Wrench,
   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { formatNumber, formatTokens, timeAgo } from "@/lib/format";
+import { GatewayWidget } from "@/components/layout/gateway-widget";
 
 export type SidebarStats = {
   sessions7d: number;
@@ -29,6 +31,7 @@ const NAV = [
     section: "Insights",
     items: [
       { href: "/", label: "Overview", icon: LayoutDashboard },
+      { href: "/gateway", label: "Gateway Wall", icon: Shield },
       { href: "/sessions", label: "Sessions", icon: MessagesSquare },
       { href: "/tools", label: "Tool Calls", icon: Wrench },
     ],
@@ -163,6 +166,8 @@ export function Sidebar({ stats }: { stats: SidebarStats }) {
               </span>
             </div>
           </div>
+
+          <GatewayWidget />
         </div>
       </aside>
     </>

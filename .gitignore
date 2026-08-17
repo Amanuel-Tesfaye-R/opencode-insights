@@ -30,6 +30,14 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# dashboard runtime logs
+.dashboard.log
+.dashboard.log.err
+
+# local data (never commit)
+*.db
+*.db-*
+
 # env files (can opt-in for committing if needed)
 .env*
 

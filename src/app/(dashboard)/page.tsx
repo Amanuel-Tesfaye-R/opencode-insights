@@ -9,6 +9,7 @@ import { PageHeader } from "@/components/ui/page-header";
 import { KpiCard } from "@/components/ui/kpi-card";
 import { Segmented } from "@/components/ui/segmented";
 import { HeroTotals } from "@/components/sections/hero-totals";
+import { GatewayWallPanel } from "@/components/sections/gateway-wall-panel";
 import { HourlyHeatmap } from "@/components/sections/hourly-heatmap";
 import { ModelBreakdown } from "@/components/sections/model-breakdown";
 import { ToolUsage } from "@/components/sections/tool-usage";
@@ -106,6 +107,8 @@ export default async function OverviewPage({
       />
 
       <HeroTotals stats={stats} rangeLabel={rangeLabel} />
+
+      <GatewayWallPanel />
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <KpiCard

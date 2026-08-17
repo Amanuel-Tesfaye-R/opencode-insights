@@ -1,9 +1,0 @@
-
-> opencode-insights@0.1.0 start
-> next start -p 3777
-
-▲ Next.js 16.3.0
-- Local:         http://localhost:3777
-- Network:       http://192.168.8.210:3777
-✓ Ready in 3.6s
-✓ Running next.config.ts took 301ms

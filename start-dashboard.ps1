@@ -3,7 +3,7 @@ param(
   [switch]$NoBrowser
 )
 
-$Project = "C:\Users\amanu\Documents\Projects\opencode-insights"
+$Project = "C:\Users\amanu\Documents\Projects\opencode-usage-tracking"
 $Url = "http://localhost:$Port"
 $Log = Join-Path $Project ".dashboard.log"
 $LogErr = "$Log.err"
@@ -39,7 +39,7 @@ try {
     -WorkingDirectory $Project -WindowStyle Hidden -PassThru `
     -RedirectStandardOutput $Log -RedirectStandardError $LogErr
 } catch {
-  Write-Host "opencode-insights: failed to start ($_)" -ForegroundColor Red
+  Write-Host "dashboard: failed to start ($_)" -ForegroundColor Red
   exit 1
 }
 
@@ -53,10 +53,10 @@ while ((Get-Date) -lt $deadline) {
     exit 0
   }
   if ($p.HasExited) {
-    Write-Host "opencode-insights: server exited early, see $Log" -ForegroundColor Red
+    Write-Host "dashboard: server exited early, see $Log" -ForegroundColor Red
     exit 1
   }
 }
 
-Write-Host "opencode-insights: timed out waiting for $Url, see $Log" -ForegroundColor Red
+Write-Host "dashboard: timed out waiting for $Url, see $Log" -ForegroundColor Red
 exit 1
